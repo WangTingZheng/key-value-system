@@ -1,22 +1,2 @@
-<<<<<<< HEAD
 CMakeSettings.json
 /out/build/WSL-GCC-Debug/key-value-system/libkvs.so
-.vs
-=======
-*.o
-*.gcno
-*.gcov
-*.gch
-*.c~
-*.gcda
-*.gcno
-*.swp
-tags
-value2.txt
-value.txt
-IMAGE_file
-README~
-disk_file
-log_file
-a.out
->>>>>>> 02cde0ceed971569a03c94da7e56d3ce71da7914
