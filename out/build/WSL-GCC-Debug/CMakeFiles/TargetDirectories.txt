@@ -1,0 +1,5 @@
+/mnt/b/Project/VS/key-value-system/out/build/WSL-GCC-Debug/CMakeFiles/rebuild_cache.dir
+/mnt/b/Project/VS/key-value-system/out/build/WSL-GCC-Debug/CMakeFiles/edit_cache.dir
+/mnt/b/Project/VS/key-value-system/out/build/WSL-GCC-Debug/key-value-system/CMakeFiles/rebuild_cache.dir
+/mnt/b/Project/VS/key-value-system/out/build/WSL-GCC-Debug/key-value-system/CMakeFiles/kvs.dir
+/mnt/b/Project/VS/key-value-system/out/build/WSL-GCC-Debug/key-value-system/CMakeFiles/edit_cache.dir

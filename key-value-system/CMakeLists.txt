@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project (key-value-system)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Wall -fPIC -shared -g -lpthread -Wl,-soname")
+add_library(kvs SHARED ./src/interface.c ./src/index.c ./src/buffer.c ./src/sync.c ./src/log.c)
+#add_executable(key-value-system key-value-system.c key-value-system.h)
