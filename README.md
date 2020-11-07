@@ -1,16 +1,12 @@
 ![logo](https://socialify.git.ci/WangTingZheng/key-value-system/image?description=1&font=Inter&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
-# Key Value System
-
-A single host key-value storage system
-
-## Environment
+# Environment
 
 Install IDE and WSL:
 - VS2019 with linux C++ package
 - Ubuntu in WSL
 
-### WSL Configuration
+## WSL Configuration
 
 Install some software and library in Ubuntu:
 
@@ -39,15 +35,15 @@ run this to restart ssh
 sudo service ssh restart
 ```
 
-### Get the code
+## Get the code
 
 Use `git clone` to download this project in your Windows and open it with Visual Studio 2019( File - Open - CMake)
 
-### Compile libkvs.so
+# Compile libkvs.so
 
 Run `Build All` in VS2019 to build libkvs.so, a file called `libkvs.so` will generate in  `out/build/WSL-GCC-Debug`. Run `Clean` in VS2019 to clean it.
 
-### Original README
+# Original README
 
 The original version of this project was developed by [Wadeleng](https://github.com/WadeLeng/key-value-system). It's original README context is:
 
