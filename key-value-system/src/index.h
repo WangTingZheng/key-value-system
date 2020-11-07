@@ -10,10 +10,11 @@
 
 #include "type.h"
 
+// 记录封装数据的信息，IDX = index
 typedef struct IDX_VALUE_INFO
 {
-	int		value_size;
-	PTR_BUF		buf_ptr;
+	int		value_size; //数据的值
+	PTR_BUF		buf_ptr; //
 	OFFSET_T	disk_offset;
 }IDX_VALUE_INFO;
 
