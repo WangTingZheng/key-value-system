@@ -14,7 +14,7 @@ Install some software and library in Ubuntu:
 sudo apt install g++ gdb make rsync zip cmake
 sudo apt-get install openssh-server
 ```
-config ssh in WSL
+config SSH in WSL
 ```shell
 sudo vi /etc/ssh/sshd_config
 ```
@@ -29,11 +29,21 @@ PermitRootLogin yes
 StrictModes yes
 ```
 
-run this to restart ssh
+run this to restart SSH
 
 ```shell
 sudo service ssh restart
 ```
+
+## Connect to WSL
+
+In Visual Studio 2019, choose:
+
+```
+Tools-Options-Cross Platform-Connection Manager
+```
+
+to add your connection to WSL, the host is `localhost`.
 
 ## Get the code
 
