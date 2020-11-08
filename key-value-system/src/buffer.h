@@ -11,10 +11,22 @@
 #include "index.h"
 #include "type.h"
 
+/**
+ * @brief 值（数据）在buffer里存储的格式是buf_word+value
+ * buf_word结构体更多的是一些描述数据的信息
+*/
 typedef struct buf_word
 {
+	// index.h中封装的value的信息结构体
 	IDX_VALUE_INFO* value_info_ptr;
-	int value_size;
+	// 数据的大小（字节）
+	int value_size; 
+	/*
+		数据的状态，有三种：
+			1. unavail: 不可用
+			2. flushed; 阻塞
+			3. not_flush: 没有阻塞
+	*/
 	enum state_t state;
 }buf_word;
 

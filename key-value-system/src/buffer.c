@@ -22,6 +22,13 @@
 OFFSET_T		disk_offset;
 const	static	int	word_size = sizeof(buf_word);
 extern	FILE*		log_file; 
+/**
+ * @brief 
+ * buf_pool buffer池的首地址，当buffer池写满需要从头覆盖写的时候，last_ptr重置到此位置
+ * last_ptr buffer池中空闲空间的首地址，当继续写入值时，从它开始写，写完一次移动到值时移动到值末尾
+ * 
+ * 
+*/
 static	PTR_BUF		buf_pool = NULL, exploit_ptr, waste_ptr, last_waste_ptr, last_ptr, last_flush_ptr;
 static	int		first_flag, rest_space = 0;
 static	int		sleep_time, not_flush_size, buffer_horizon_size;
@@ -33,6 +40,14 @@ enum	diff_t		diff;
 
 static	void*		buffer_lookout();
 
+/**
+ * @brief 
+ * @param buffer_mem 
+ * @param buf_size 
+ * @param buffer_sleep_time 
+ * @param horizon_size 
+ * @return 
+*/
 int buffer_init(const char* buffer_mem, const int buf_size, const int buffer_sleep_time, const int horizon_size)
 {
 	if (horizon_size >= buf_size)		//for safe
