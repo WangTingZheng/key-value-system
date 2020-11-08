@@ -45,6 +45,8 @@ Tools-Options-Cross Platform-Connection Manager
 
 to add your connection to WSL, the host is `localhost`.
 
+![connection](./doc/image/readme_options.png)
+
 ## Get the code
 
 Use `git clone` to download this project in your Windows and open it with Visual Studio 2019( File - Open - CMake)
