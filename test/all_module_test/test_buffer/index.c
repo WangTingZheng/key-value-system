@@ -203,6 +203,7 @@ int idx_exit()
 	return 0;
 }
 
+// DJB hashº∆À„∑Ω∑®
 static HASH hash_func_1(const char* key, int key_size)
 {
 	unsigned int hash = 5381;
