@@ -1,14 +1,20 @@
 # ninja log v5
 0	18	0	clean	a31eedcededa8236
-17	179	1604749103127010100	key-value-system/CMakeFiles/kvs.dir/src/log.c.o	5b48db50f0b5106d
-10	195	1604749103139974800	key-value-system/CMakeFiles/kvs.dir/src/sync.c.o	5b1621d4138b70c6
-1	171	1604749103110055500	key-value-system/CMakeFiles/kvs.dir/src/interface.c.o	405d89fd8dabb99e
-6	196	1604749103139974800	key-value-system/CMakeFiles/kvs.dir/src/buffer.c.o	1d439a6f5882d905
-4	173	1604749103114045300	key-value-system/CMakeFiles/kvs.dir/src/index.c.o	879b96db068e323
-196	296	1604749103238711200	key-value-system/libkvs.so	95b8f3dee178c90
 11	253	1604760853132835100	key-value-system/CMakeFiles/kvs.dir/src/log.c.o	5b48db50f0b5106d
-6	255	1604760853132835100	key-value-system/CMakeFiles/kvs.dir/src/buffer.c.o	1d439a6f5882d905
 8	256	1604760853132835100	key-value-system/CMakeFiles/kvs.dir/src/sync.c.o	5b1621d4138b70c6
 0	257	1604760853132835100	key-value-system/CMakeFiles/kvs.dir/src/interface.c.o	405d89fd8dabb99e
+6	255	1604760853132835100	key-value-system/CMakeFiles/kvs.dir/src/buffer.c.o	1d439a6f5882d905
 4	257	1604760853132835100	key-value-system/CMakeFiles/kvs.dir/src/index.c.o	879b96db068e323
 258	348	1604760853229065500	key-value-system/libkvs.so	95b8f3dee178c90
+31	518	1604908996401305600	key-value-system/CMakeFiles/kvs.dir/src/index.c.o	879b96db068e323
+29	520	1604908996400318900	key-value-system/CMakeFiles/kvs.dir/src/interface.c.o	405d89fd8dabb99e
+35	595	1604908996482087600	key-value-system/CMakeFiles/kvs.dir/src/sync.c.o	5b1621d4138b70c6
+33	613	1604908996497046600	key-value-system/CMakeFiles/kvs.dir/src/buffer.c.o	1d439a6f5882d905
+613	815	1604908996694643000	key-value-system/libkvs.so	95b8f3dee178c90
+0	13	0	clean	a31eedcededa8236
+9	196	1604909058718853300	key-value-system/CMakeFiles/kvs.dir/src/log.c.o	5b48db50f0b5106d
+3	197	1604909058716859100	key-value-system/CMakeFiles/kvs.dir/src/index.c.o	879b96db068e323
+1	204	1604909058720849400	key-value-system/CMakeFiles/kvs.dir/src/interface.c.o	405d89fd8dabb99e
+7	227	1604909058758747300	key-value-system/CMakeFiles/kvs.dir/src/sync.c.o	5b1621d4138b70c6
+5	238	1604909058773706500	key-value-system/CMakeFiles/kvs.dir/src/buffer.c.o	1d439a6f5882d905
+239	326	1604909058855487400	key-value-system/libkvs.so	95b8f3dee178c90

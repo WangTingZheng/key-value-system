@@ -23,13 +23,18 @@ FILE*	log_file = NULL;
 
 int kv_init(const KVS_ENV* kvs)
 {
+	// 定义一个buffer区指针变量，赋值为空
 	char* buffer_mem = NULL;
 
+	// 申请g_image 为镜像大小加上buffer区尺寸的内存空间
 	g_image = (char*)malloc(IMAGE_SIZE + kvs->buffer_size);	//malloc all modules memory
+	// buffer区的首地址是
 	buffer_mem = (PTR_BUF)(g_image + IMAGE_SIZE);
 
+	// 如果存在log文件
 	if (kvs->log_file_path)
 	{
+		// 以写的方式打开log文件
 		log_file = fopen(kvs->log_file_path, "w");
 		if (log_file == NULL)
 		{
@@ -39,15 +44,23 @@ int kv_init(const KVS_ENV* kvs)
 	} else
 		log_file = NULL;
 
+	// 传入数据存储文件地址来初始化
 	if (sync_init(kvs->disk_file_path) != 0)
 	{
 		log_err(__FILE__, __LINE__, log_file, "kv_init---sync_init fail.");
 		return -1;
 	}
 
+	// 初始化index在内存中的镜像。下次系统启动可以载入
 	IMAGE_file_name = kvs->IMAGE_file_path;
+	/* 如果初始化方式为加载
+	* 初始化方式有两种：
+	* 1.INIT_TYPE_CREATE 创建
+	* 2.INT_TYPE_LOAD 加载
+	*/
 	if (kvs->init_type == INIT_TYPE_LOAD)
 	{
+		// 调用sync镜像加载函数，加载镜像，从g_image缓冲区写入镜像大小的数据到镜像文件中，重置文件偏移量为文件开头
 		if (sync_image_load(IMAGE_file_name, g_image, IMAGE_SIZE) != 0)
 		{
 			log_err(__FILE__, __LINE__, log_file, "kv_init---sync_image_load fail.");

@@ -24,8 +24,8 @@ typedef struct buf_word
 	/*
 		数据的状态，有三种：
 			1. unavail: 不可用
-			2. flushed; 阻塞
-			3. not_flush: 没有阻塞
+			2. flushed; 已刷新
+			3. not_flush: 没有刷新
 	*/
 	enum state_t state;
 }buf_word;

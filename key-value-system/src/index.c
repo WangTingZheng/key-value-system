@@ -39,6 +39,7 @@ int idx_init(const char* image, INIT_TYPE init_type)
 	int i;
 	PTR_KW j;
 
+	// 
 	ht_table = (PTR_KW*)(image + IMAGE_HT_TABLE);
 	idx_nodes = (IDX_NODE*)(image + IMAGE_IDX_NODES);
 	free_idx_nodes_stack = (PTR_KW*)(image + IMAGE_FREE_IDX_NODES);

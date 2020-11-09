@@ -1,0 +1,4 @@
+# ninja log v5
+1	741	626612084	key-value-system/CMakeFiles/kvs.dir/src/index.c.obj	1a7ca29f12f7e890
+12	742	626612084	key-value-system/CMakeFiles/kvs.dir/src/log.c.obj	1768fa1bf2007fab
+4	744	626612084	key-value-system/CMakeFiles/kvs.dir/src/interface.c.obj	9296cd16ee6f2f6d
